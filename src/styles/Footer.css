@@ -1,6 +1,6 @@
-footer {
+#footer {
+  position:absolute;
   color: rgb(155, 155, 155);
-  position: absolute;
   width: 100vw;
   height: 30px;
   bottom: 0;
@@ -10,7 +10,7 @@ footer {
   justify-content: center;
 }
 
-a {
+#github-link {
   color: rgb(155, 155, 155);
   font-size: 15px;
   transition: transform 0.2s ease-in-out;
@@ -18,7 +18,7 @@ a {
   margin-bottom:2px;
 }
 
-a:hover {
+#github-link:hover {
   color: rgb(155, 155, 155);
   transform: scale(1.2);
 }
