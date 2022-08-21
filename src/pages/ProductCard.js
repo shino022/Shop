@@ -1,12 +1,21 @@
-const ProductCard = (id, image, title, description, price) => {
+import { useEffect,useState } from "react";
+
+const ProductCard = (props) => {
+  useEffect(()=>{
+    console.log(props.product);
+  })
   return (
   <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-    <div id="card" className="my-3">
-      <img src="..." className="card-img-top" alt="..." />
-      <div className="card-body">
-        <h5 className="card-title">Card title</h5>
-        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <button className="btn btn-primary">Add to cart</button>
+    <div id="card" className="my-3 p-4">
+      <div class="img-container d-flex flex-column justify-content-center">
+        <img src={props.product.image} className="card-img-top flex-grow-0" alt="..." />
+      </div>
+      <div className="card-body d-flex flex-column justify-content-between mt-3">
+        <div className="text-wrapper mb-2">
+          <h5 className="card-title fw-bold">{props.product.title}</h5>
+          <p className="card-text">{`$${props.product.price}`}</p>
+        </div>
+        <button id="add-to-cart-button"className="btn btn-dark py-2">Add to cart</button>
       </div>
     </div>
   </div>

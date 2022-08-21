@@ -4,6 +4,39 @@
 
 #card {
   background-color: white;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.347); ;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.347);
+}
+.img-container{
+  height: 13rem;
 }
 
+.img-container img{
+  object-fit: contain;
+
+}
+
+.card-img-top {
+  max-height: 100%;
+}
+.card-body {
+  height:9em;
+}
+
+.card-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  font-size: 18px;
+  color:rgb(43, 43, 43)
+}
+
+#add-to-cart-button {
+  border-radius: 0;
+  height:44px
+}
+
+#add-to-cart-button:hover {
+  border-radius: 0;
+  font-size: 1.1rem;
+}
