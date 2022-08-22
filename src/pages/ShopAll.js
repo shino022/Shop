@@ -1,7 +1,7 @@
 import ProductCard from "./ProductCard";
 import { useEffect,useState } from "react";
 import "../styles/ShopAll.css";
-const ShopAll = () => {
+const ShopAll = (props) => {
   const [products, setProducts] = useState([]);
   useEffect(()=>{
     fetchProduct();
@@ -15,6 +15,8 @@ const ShopAll = () => {
 
   const productCards = products.map((product) => {
     return <ProductCard 
+      cart={props.cart} 
+      setCart={props.setCart}
       key={product.id}
       product={product}
        />

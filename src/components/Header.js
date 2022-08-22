@@ -1,7 +1,26 @@
 import { Link } from "react-router-dom";
 import "../styles/Header.css";
 import { FaShoppingCart } from "react-icons/fa";
-const Header = () => {
+import { useState, useEffect } from "react";
+
+const Header = (props) => {
+  const [totalQuantity, setTotalQuantity] = useState(0);
+
+  const getTotalQuantity = () => {
+    let quantity = 0;
+    for( const key in props.cart ) {
+      quantity += props.cart[key].quantity;
+    }
+    return quantity;
+  }
+
+  useEffect(()=>{
+    setTotalQuantity(getTotalQuantity());
+  },[props]);
+
+
+   
+   
   return (
     <div id="Header">
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -20,13 +39,13 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <div class="temp-wrapper d-flex">
+          <div className="temp-wrapper d-flex">
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
-            <button id="cart" className="pt-2 ms-2">
+            <button id="cart-button" className="pt-2 ms-2">
               <FaShoppingCart id="cart-img"/>
-              <div id="num-items">24</div>
+              <div id="num-items">{totalQuantity}</div>
             </button>
           </div>
         </div>

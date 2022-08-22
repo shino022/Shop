@@ -3,12 +3,12 @@ import Home from "../pages/Home";
 import ShopAll from "../pages/ShopAll";
 import Contact from "../pages/Contact";
 
-const Main = () => {
+const Main = (props) => {
   return (
     <div id="Main">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/shopall" element={<ShopAll />} />
+        <Route path="/shopall" element={<ShopAll  cart={props.cart} setCart={props.setCart}/>} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
