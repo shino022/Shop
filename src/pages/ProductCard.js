@@ -15,7 +15,7 @@ const ProductCard = (props) => {
           <h5 className="card-title fw-bold">{props.product.title}</h5>
           <p className="card-text">{`$${props.product.price}`}</p>
         </div>
-        <button id="add-to-cart-button"className="btn btn-dark py-2">Add to cart</button>
+        <button id="add-to-cart-button"className="btn btn-dark py-2 fw-semibold">Add to cart</button>
       </div>
     </div>
   </div>
