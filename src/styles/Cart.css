@@ -1,0 +1,21 @@
+#Cart {
+  background-color: white;
+  height:100vh;
+  width:400px;
+  position:fixed;
+  right:0;
+}
+
+#cart-background {
+  background-color: rgba(0, 0, 0, 0.406);
+  position:fixed;
+  height:100vh;
+  width:100vw;
+}
+
+@media (max-width: 480px)
+{
+  #Cart {
+    width:100vw;
+  }
+}

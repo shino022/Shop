@@ -1,4 +1,3 @@
-import { useEffect,useState } from "react";
 const ProductCard = (props) => {
   const addToCart = ()=> {
     const setCart = props.setCart;
@@ -12,7 +11,7 @@ const ProductCard = (props) => {
 
     }
   }
-  
+
   return (
   <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
     <div id="card" className="my-3 p-4">

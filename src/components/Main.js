@@ -5,7 +5,7 @@ import Contact from "../pages/Contact";
 
 const Main = (props) => {
   return (
-    <div id="Main">
+    <div id="Main" style={{zIndex:'2', position:'relative'}}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/shopall" element={<ShopAll  cart={props.cart} setCart={props.setCart}/>} />

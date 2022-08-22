@@ -5,11 +5,11 @@ import { useState, useEffect } from "react";
 
 const Header = (props) => {
   const [totalQuantity, setTotalQuantity] = useState(0);
-
+  
   const getTotalQuantity = () => {
     let quantity = 0;
     for( const key in props.cart ) {
-      quantity += props.cart[key].quantity;
+        quantity += props.cart[key].quantity;
     }
     return quantity;
   }
@@ -18,11 +18,8 @@ const Header = (props) => {
     setTotalQuantity(getTotalQuantity());
   },[props]);
 
-
-   
-   
   return (
-    <div id="Header">
+    <div id="Header"  style={{zIndex:'2', position:'relative'}}>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid px-5">
           <span className="navbar-brand h1" id="brand">Shop</span>
