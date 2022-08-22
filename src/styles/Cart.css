@@ -1,5 +1,5 @@
 #Cart {
-  background-color: white;
+  background-color: rgb(226, 226, 226);
   height:100vh;
   width:400px;
   position:fixed;
@@ -18,4 +18,57 @@
   #Cart {
     width:100vw;
   }
+}
+
+#xMark {
+  border-width: 0;
+  background-color: transparent;
+}
+
+.cart-img-wrapper {
+  width:7em;
+  height:7em;
+}
+
+.cart-img-wrapper img {
+  object-fit: contain;
+  width:7em;
+  height:7em;
+}
+
+#item {
+  background-color: white;
+}
+
+#card-title{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-weight: 700;
+}
+
+#card-buttons{
+  width: 75px;
+}
+
+#card-buttons button {
+  height:30px;
+  width:30px;
+  border-width: 0;
+  background-color: white;
+}
+
+#card-buttons button div {
+  font-size: 15px;
+}
+
+#card-quantity {
+  padding-top:4px;
+  font-weight: 700;
+  color:rgb(71, 71, 71)
+}
+
+#cart-items {
+  overflow: auto;
 }

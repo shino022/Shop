@@ -12,7 +12,7 @@ const App = () => {
   })
   return (
     <div id="App">
-      <Cart cart={cart}/>
+      <Cart cart={cart} setCart={setCart}/>
       <BrowserRouter>
         <Header cart={cart}/>
         <Main setCart={setCart} cart={cart}/>
