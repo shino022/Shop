@@ -20,9 +20,14 @@ const Header = (props) => {
 
   return (
     <div id="Header"  style={{zIndex:'2', position:'relative'}}>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-5">
-        <div className="container-fluid px-5">
+      <nav className="navbar d-flex  navbar-expand-lg navbar-dark bg-dark px-5">
+        <div className="container-lg">
           <span className="navbar-brand h1" id="brand">Shop</span>
+          <div className="temp-wrapper d-flex">
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+          </div>
           <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul className="navbar-nav mb-2 mb-lg-0">
               <li className="nav-item">
@@ -36,16 +41,11 @@ const Header = (props) => {
               </li>
             </ul>
           </div>
-          <div className="temp-wrapper d-flex">
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <button id="cart-button" className="pt-2 ms-2">
-              <FaShoppingCart id="cart-img"/>
-              <div id="num-items">{totalQuantity}</div>
-            </button>
-          </div>
         </div>
+        <button id="cart-button" className="pt-2 ms-2">
+          <FaShoppingCart id="cart-img"/>
+          <div id="num-items">{totalQuantity}</div>
+        </button>
       </nav>
     </div>
   );
