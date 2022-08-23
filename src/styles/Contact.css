@@ -1,0 +1,21 @@
+#contact-us {
+  font-family:serif;
+  font-weight: 600;
+}
+
+
+.support-title {
+  font-family:serif;
+  font-weight: 600;
+}
+@media (max-width: 575.98px) { 
+#Contact {
+  padding:3px 20px !important;
+}
+#contact-us-wrapper{
+  margin-bottom: 0px !important;
+}
+#contant-cards-wrapper {
+    flex-direction: column;
+  } 
+}
