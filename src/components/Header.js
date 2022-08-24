@@ -31,13 +31,13 @@ const Header = (props) => {
           <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul className="navbar-nav mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link" to="/">Home</Link>
+                <Link className="nav-link" to="/Shop">Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/shopall">Shop All</Link>
+                <Link className="nav-link" to="/Shop/shopall">Shop All</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/contact">Contact</Link>
+                <Link className="nav-link" to="/Shop/contact">Contact</Link>
               </li>
             </ul>
           </div>

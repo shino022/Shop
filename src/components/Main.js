@@ -7,9 +7,9 @@ const Main = (props) => {
   return (
     <div id="Main" style={{zIndex:'2', position:'relative'}}>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/shopall" element={<ShopAll  cart={props.cart} setCart={props.setCart}/>} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/Shop" element={<Home />} />
+        <Route path="/Shop/shopall" element={<ShopAll  cart={props.cart} setCart={props.setCart}/>} />
+        <Route path="/Shop/contact" element={<Contact />} />
       </Routes>
     </div>
   );
