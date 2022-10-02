@@ -1,5 +1,12 @@
 # Shop
-A fake store React app that fetches data from Fake Store API and display them in responsive pages using Bootstrap
+A fake store React app.
+
+## Features
+Clean user interface with smooth animations.
+
+Add and remove products from the shopping cart.
+
+Responsive design.
 
 ## Built with
 React, React Router, Fake Store API and Bootstrap.
