@@ -2,8 +2,6 @@
 A fake store React app.
 
 ## Features
-Clean user interface with smooth animations.
-
 Add and remove products from the shopping cart.
 
 Responsive design.
